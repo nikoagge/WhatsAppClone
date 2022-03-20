@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LandingViewController" id="Y6W-OH-hqX" customClass="LandingViewController" customModule="Landing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HK2-eT-WpE">
+                                <rect key="frame" x="147" y="138" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="qq8-Kf-raS"/>
+                                    <constraint firstAttribute="height" constant="120" id="rDD-Nq-BtF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WA Clone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnx-Hy-uby">
+                                <rect key="frame" x="13" y="298" width="414" height="46.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ojy-oY-Jd8">
+                                <rect key="frame" x="13" y="375.5" width="388" height="138"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Realtime messaging" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2t4-hk-fcZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="69"/>
+                                        <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Socket IO based community chat app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3qI-Vf-HOU">
+                                        <rect key="frame" x="0.0" y="69" width="388" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nty-uc-Ssd">
+                                <rect key="frame" x="40" y="672" width="334" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="dfo-5P-35t"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="31"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ojy-oY-Jd8" secondAttribute="trailing" constant="13" id="0L5-XY-b0O"/>
+                            <constraint firstItem="Ojy-oY-Jd8" firstAttribute="top" secondItem="jnx-Hy-uby" secondAttribute="bottom" constant="31" id="2Ij-Iy-gIx"/>
+                            <constraint firstItem="HK2-eT-WpE" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="38z-wf-GUQ"/>
+                            <constraint firstItem="jnx-Hy-uby" firstAttribute="top" secondItem="HK2-eT-WpE" secondAttribute="bottom" constant="40" id="9Dj-kD-rrK"/>
+                            <constraint firstItem="HK2-eT-WpE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="94" id="BAB-lY-9i8"/>
+                            <constraint firstItem="Nty-uc-Ssd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="L36-0L-fR9"/>
+                            <constraint firstItem="Nty-uc-Ssd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ojy-oY-Jd8" secondAttribute="bottom" constant="13" id="Maq-5R-L88"/>
+                            <constraint firstItem="Ojy-oY-Jd8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="13" id="PKU-tv-w4L"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Nty-uc-Ssd" secondAttribute="bottom" constant="40" id="eAh-Fo-oSZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Nty-uc-Ssd" secondAttribute="trailing" constant="40" id="eTc-Bf-Vmc"/>
+                            <constraint firstItem="jnx-Hy-uby" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="13" id="tO8-od-x41"/>
+                            <constraint firstItem="jnx-Hy-uby" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="13" id="wz3-3D-32V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="3qI-Vf-HOU" id="fIE-AI-0gj"/>
+                        <outlet property="logoImageView" destination="HK2-eT-WpE" id="FaI-Dj-8RP"/>
+                        <outlet property="startButton" destination="Nty-uc-Ssd" id="tb6-iL-qJJ"/>
+                        <outlet property="subtitleLabel" destination="2t4-hk-fcZ" id="bxs-IB-hsp"/>
+                        <outlet property="titleLabel" destination="jnx-Hy-uby" id="ziN-d3-myb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
