@@ -14,15 +14,22 @@ class LandingViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     
+    var onStart: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
+    }
+    
+    @IBAction func startButtonTouchUpInside(_ sender: UIButton) {
+        onStart?()
     }
 }
 
 private extension LandingViewController {
     func setupUI() {
         logoImageView.image = UIImage(named: "logo", in: Bundle(for: LandingViewController.self), with: nil)
+        startButton.setImage(UIImage(named: "start", in: Bundle(for: LandingViewController.self), with: nil), for: .normal)
     }
 }

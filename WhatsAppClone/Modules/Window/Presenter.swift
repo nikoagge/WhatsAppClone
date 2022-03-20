@@ -9,6 +9,7 @@ import UIKit
 
 protocol Routing {
     func routeToLanding()
+    func routeToLogin()
 }
 
 class Presenter: Presentation {

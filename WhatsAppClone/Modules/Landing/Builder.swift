@@ -8,9 +8,10 @@
 import UIKit
 
 public final class Builder {
-    public static func build() -> UIViewController {
+    public static func build(completion: @escaping () -> Void) -> UIViewController {
         let landingStoryboard = UIStoryboard(name: "Landing", bundle: Bundle(for: self))
         let landingStoryboardViewController = LandingViewController.instantiate(from: landingStoryboard)
+        landingStoryboardViewController.onStart = completion
         
         return landingStoryboardViewController
     }

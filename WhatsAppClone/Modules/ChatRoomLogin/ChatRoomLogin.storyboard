@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat Room Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChatRoomLoginViewController" id="Y6W-OH-hqX" customClass="ChatRoomLoginViewController" customModule="ChatRoomLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WA Clone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVt-kH-8ae">
+                                <rect key="frame" x="13" y="138" width="388" height="46.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter following details and join community chat" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7K-B8-c4S">
+                                <rect key="frame" x="31" y="215.5" width="352" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KIi-ry-q5X">
+                                <rect key="frame" x="107" y="310.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Sur-Bj-OVx"/>
+                                    <constraint firstAttribute="height" constant="200" id="X3L-RF-mZS"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="hc9-3Q-szY">
+                                <rect key="frame" x="40" y="541.5" width="334" height="116"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AV5-y4-5p9">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="51.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="31"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" id="kDE-yb-fBf">
+                                        <rect key="frame" x="0.0" y="64.5" width="334" height="51.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="31"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRe-xo-X58">
+                                <rect key="frame" x="40" y="728" width="334" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="dye-A0-4ve"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                    <fontDescription key="titleFontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="31"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hc9-3Q-szY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="0l2-AI-duC"/>
+                            <constraint firstItem="KIi-ry-q5X" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="1gE-Gd-erh"/>
+                            <constraint firstItem="hc9-3Q-szY" firstAttribute="top" secondItem="KIi-ry-q5X" secondAttribute="bottom" constant="31" id="6M2-5x-XDa"/>
+                            <constraint firstItem="kRe-xo-X58" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="90Q-Qz-SKJ"/>
+                            <constraint firstItem="ZVt-kH-8ae" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="13" id="A0k-Ck-gsW"/>
+                            <constraint firstItem="a7K-B8-c4S" firstAttribute="top" secondItem="ZVt-kH-8ae" secondAttribute="bottom" constant="31" id="F8S-aO-kGH"/>
+                            <constraint firstItem="ZVt-kH-8ae" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="94" id="IhK-gp-5Vg"/>
+                            <constraint firstItem="kRe-xo-X58" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hc9-3Q-szY" secondAttribute="bottom" constant="13" id="LSy-D1-0a7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZVt-kH-8ae" secondAttribute="trailing" constant="13" id="PwG-zE-PI9"/>
+                            <constraint firstItem="a7K-B8-c4S" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="31" id="QgU-2a-2b5"/>
+                            <constraint firstItem="KIi-ry-q5X" firstAttribute="top" secondItem="a7K-B8-c4S" secondAttribute="bottom" constant="40" id="Y58-jf-aER"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hc9-3Q-szY" secondAttribute="trailing" constant="40" id="da7-i4-E1S"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kRe-xo-X58" secondAttribute="bottom" constant="40" id="hy7-8u-BQy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="a7K-B8-c4S" secondAttribute="trailing" constant="31" id="ojW-Kb-z4E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kRe-xo-X58" secondAttribute="trailing" constant="40" id="sTt-kf-3Y7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="KIi-ry-q5X" id="mEP-oT-DPM"/>
+                        <outlet property="descriptionLabel" destination="a7K-B8-c4S" id="OUk-a8-HiD"/>
+                        <outlet property="emailTextField" destination="kDE-yb-fBf" id="lBd-TS-CsU"/>
+                        <outlet property="loginButton" destination="kRe-xo-X58" id="SK2-4Q-3gE"/>
+                        <outlet property="titleLabel" destination="ZVt-kH-8ae" id="QwW-8T-A4y"/>
+                        <outlet property="usernameTextField" destination="AV5-y4-5p9" id="FL3-jn-eWc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
