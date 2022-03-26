@@ -1,0 +1,19 @@
+{
+  "commitish" : "3.4.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "38f753ae8c4156eaa4e59d98019a26eb69768fe62c8e06da86c82604297303a3",
+      "name" : "SwiftLinkPreview",
+      "container" : "SwiftLinkPreview.xcframework",
+      "identifier" : "ios-arm64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "df04d9ea58853358821f4d89d0a1f2e0775648ff908d50aee3a778c0ce93f338",
+      "name" : "SwiftLinkPreview",
+      "container" : "SwiftLinkPreview.xcframework",
+      "identifier" : "ios-arm64"
+    }
+  ]
+}

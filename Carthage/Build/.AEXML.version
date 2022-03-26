@@ -1,0 +1,19 @@
+{
+  "commitish" : "4.6.1",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "fecc2af53bd3057ef7e8ba3ef3accf73fc125d6e1bbf75c82d7d2b70886c541f",
+      "name" : "AEXML",
+      "container" : "AEXML.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "f27ba6e9c4dd9bf9ac689bcf9d3b32af4e7938318dd657ac79574c11d506e292",
+      "name" : "AEXML",
+      "container" : "AEXML.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

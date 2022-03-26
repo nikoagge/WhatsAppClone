@@ -1,0 +1,19 @@
+{
+  "commitish" : "v6.5.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "fe4fec71426dfbc02df5396c2c15dd90ca3ae0b63198992592fc1874d0e9fd2e",
+      "name" : "UICircularProgressRing",
+      "container" : "UICircularProgressRing.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "bd4efd8671ddecf3b11a8a697cc7c3f171d6ddd6e81be961a4e339a507e1f4e4",
+      "name" : "UICircularProgressRing",
+      "container" : "UICircularProgressRing.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

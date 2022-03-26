@@ -1,0 +1,8 @@
+github "ReactiveX/RxSwift" ~> 5.0
+github "socketio/socket.io-client-swift" ~> 15.2.0
+github "Alamofire/Alamofire" ~> 5.2
+github "RxSwiftCommunity/RxDataSources" ~> 4.0
+github "tadija/AEXML"
+github "luispadron/UICircularProgressRing" ~> 6.0.0
+github "RxSwiftCommunity/RxAlamofire"
+github "LeonardoCardoso/SwiftLinkPreview" ~> 3.1.0
